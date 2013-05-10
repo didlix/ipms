@@ -1,0 +1,8 @@
+== End Of Life
+Compare Products and Feed_Products reguarly, if a product is in Products but not in Feed_Products
+then mark it as EOL => true in Products
+
+
+== Scheduled Importing
+Build the scheduler rake, compare the update frequency column with last run. if now - frequency is more
+than last updated then GO GO GO

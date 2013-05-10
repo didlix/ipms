@@ -1,0 +1,34 @@
+<p>
+  <b>Title:</b>
+  <%=h @feed.title %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @feed.url %>
+</p>
+
+<p>
+  <b>Supplier:</b>
+  <%=h @feed.supplier_id %>
+</p>
+
+<p>
+  <b>Last downloaded:</b>
+  <%=h @feed.last_downloaded %>
+</p>
+
+<p>
+  <b>Download status:</b>
+  <%=h @feed.download_status %>
+</p>
+
+<p>
+  <b>Last run:</b>
+  <%=h @feed.last_run %>
+</p>
+
+
+<%= link_to 'Edit', edit_feed_path(@feed) %> |
+<%= link_to 'Back', feeds_path %> |
+<%= link_to 'Map Feed', :controller => 'feed_maps', :action => 'show_by_feed_id', :id => @feed %>

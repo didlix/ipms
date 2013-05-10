@@ -1,0 +1,30 @@
+body {
+    margin:0;
+    padding:0;
+}
+#layout-wrapper {
+    width:95%;
+    margin: 0 auto;
+}
+
+#main-content-col {
+    width:70%;
+    border: 2px solid #999;
+    background: #fff;
+}
+#sidebar-col {
+    width:15%;
+    background: #CCC;
+}
+#nav {
+    width: 100%;
+    background: #000;
+}
+
+
+#content-inner {
+    padding:15px;
+}
+#nav-inner {
+    padding: 8px 5% 12px 5%;
+}

@@ -1,0 +1,15 @@
+.cols:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+* html .cols {height: 1%;}
+.cols{ display:inline-block; }
+.cols{ display:block; }
+.cols .col{
+  float:left;
+  overflow:hidden;
+  display:inline;
+}

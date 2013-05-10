@@ -1,0 +1,40 @@
+<p>
+  <b>Name:</b>
+  <%=h @product.product_name %>
+</p>
+
+<p>
+  <b>Manufacturer Part code:</b>
+  <%=h @product.manufacturer_code %>
+</p>
+
+<p>
+  <b> Supplier Part code:</b>
+  <%=h @product.supplier_code %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @product.description %>
+</p>
+
+<h2><%= pluralize @product.feed_products.size, "Supplier" %></h2>
+
+<table>
+    <th>Company</th>
+    <th>Supplier Partcode</th>
+    <th>Stock</th>
+    <th></th>
+<% @product.feed_products.each do |product| %>
+    <tr>
+        <td><%=h product.feed.supplier.company %></td> 
+        <td><%=h product.supplier_code %></td>
+        <td><%=h product.stock %></td>
+        <td>Details</td>
+    </tr>
+<% end %>
+
+
+</table>
+
+<%= link_to 'Back', products_path %>

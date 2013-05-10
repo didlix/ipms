@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>IPMS: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'ipms' %>
+  <%= stylesheet_link_tag 'cols' %>
+  <%= stylesheet_link_tag 'layout' %>
+</head>
+<body>
+
+
+<div id="nav">
+    <div id="nav-inner">
+        <%= link_to 'Feeds Management', feeds_path %> |
+        <%= link_to 'Suppliers Management', suppliers_path %> |
+        <%= link_to 'Products', products_path %> |
+        <%= link_to 'Search', '/search' %>
+    </div> <!-- #nav-inner -->
+</div>
+
+<%= image_tag 'logo.png' %>
+
+  
+
+<div id="layout-wrapper" class="cols">
+
+    <div class="col" id="main-content-col">
+        <div id="content-inner">
+            <p style="color: green"><%= flash[:notice] %></p>
+        
+            <%= yield %>
+            
+        </div> <!-- #content-inner -->
+        
+    </div> <!-- #main-content-col -->
+
+    <div class="col last" id="sidebar-col">
+        
+    </div>
+
+</div> <!-- #layout-wrapper -->
+
+</body>
+</html>

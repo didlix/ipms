@@ -1,0 +1,9 @@
+2009-12-09
+ * Added make it so sound effect
+ * Now check a Fee_Product's supplier id from the feed it is associated with
+2009-12-08
+ * Fixed issue downloading files with flush
+2009-12-07 
+ * Installed acts as paranoid gem in rails
+ * Added basic search page [WIP]
+ * Added acts_as_paranoid to feed_products

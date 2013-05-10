@@ -1,0 +1,98 @@
+<h1>Feed Mapping</h1>
+<p>Please map the sample data and columns, this will allow us to correctly import the data</p>
+
+
+<% form_for(@feed_map) do |f| %>
+  <%= f.error_messages %>
+    <table cellpadding="10">
+        <tr>
+            <th>Our Column</th>
+            <th width="200">Sample Data</th>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :manufacturer_code %>
+            </td>
+            <td>
+                <%= f.select :manufacturer_code, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :supplier_code %>
+            </td>
+            <td>
+                <%= f.select :supplier_code, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :brand_id %>
+            </td>
+            <td>
+                <%= f.select :brand_id, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :product_name %>
+            </td>
+            <td>
+                <%= f.select :product_name, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :description %>
+            </td>
+            <td>
+                <%= f.select :description, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :weight %>
+            </td>
+            <td>
+                <%= f.select :weight, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :dimensions %>
+            </td>
+            <td>
+                <%= f.select :dimensions, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :images %>
+            </td>
+            <td>
+                <%= f.select :images, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :stock %>
+            </td>
+            <td>
+                <%= f.select :stock, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :price %>
+            </td>
+            <td>
+                <%= f.select :price, @data, :include_blank => '' %>    
+            </td>
+        </tr>
+                                                                                
+    </table>
+
+    <%= hidden_field 'feed_map', 'feed_id', :value => @feed_id %>
+    <%= f.submit "Save Changes" %>
+
+<% end %>

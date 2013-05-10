@@ -1,0 +1,13 @@
+<h1>Show Feed Maps</h1>
+    
+    <p>
+    <strong>Feed Name</strong><br />
+    <%=h @feed_map.feed.title %>
+    </p>
+
+    <p>
+    <strong>Feed URL</strong><br />
+    <%=h @feed_map.feed.url %> | Status: <%=h @feed_map.feed.download_status %>
+    </p>
+    
+    <%= @data.to_yaml %>

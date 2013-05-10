@@ -1,0 +1,28 @@
+<p>
+  <b>Company:</b>
+  <%=h @supplier.company %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @supplier.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @supplier.email %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%=h @supplier.telephone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%=h @supplier.fax %>
+</p>
+
+
+<%= link_to 'Edit', edit_supplier_path(@supplier) %> |
+<%= link_to 'Back', suppliers_path %>

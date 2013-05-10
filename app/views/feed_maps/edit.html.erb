@@ -1,0 +1,98 @@
+<h1>Feed Mapping</h1>
+<p>Please map the sample data and columns, this will allow us to correctly import the data</p>
+
+
+<% form_for(@feed_map) do |f| %>
+  <%= f.error_messages %>
+    <table cellpadding="10">
+        <tr>
+            <th>Our Column</th>
+            <th width="200">Sample Data</th>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :manufacturer_code %>
+            </td>
+            <td>
+                <%= f.select :manufacturer_code, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :supplier_code %>
+            </td>
+            <td>
+                <%= f.select :supplier_code, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :brand_id %>
+            </td>
+            <td>
+                <%= f.select :brand_id, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :product_name %>
+            </td>
+            <td>
+                <%= f.select :product_name, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :description %>
+            </td>
+            <td>
+                <%= f.select :description, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :weight %>
+            </td>
+            <td>
+                <%= f.select :weight, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :dimensions %>
+            </td>
+            <td>
+                <%= f.select :dimensions, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :images %>
+            </td>
+            <td>
+                <%= f.select :images, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :stock %>
+            </td>
+            <td>
+                <%= f.select :stock, @data %>    
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <%= f.label :price %>
+            </td>
+            <td>
+                <%= f.select :price, @data %>    
+            </td>
+        </tr>
+                                                                                
+    </table>
+
+    <%= f.hidden_field :feed_id %>
+    <%= f.submit "Update" %>
+
+<% end %>

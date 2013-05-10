@@ -1,0 +1,5 @@
+#Tue Nov 03 10:19:23 GMT 2009
+eclipse.preferences.version=1
+org.eclipse.php.core.contextRoot=
+org.eclipse.php.core.defaultEncoding=
+org.eclipse.php.core.includePath=<?xml version\="1.0" encoding\="UTF-8"?>\n<includepath>\n\t<includepathentry createdReference\="false" resource\="ipms.local" path\="FRAMEWORK_1.6_HOME" contentKind\="source" kind\="var">\n</includepathentry>\n</includepath>\n

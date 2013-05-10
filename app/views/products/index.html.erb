@@ -1,0 +1,23 @@
+<h1>Listing Products</h1>
+
+<table>
+  <tr>
+    <th>Manufacturer Partcode</th>
+    <th>Product Name</th>
+    <th>Description</th>
+    <th>Stock</th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%=h product.manufacturer_code %>
+    <td><%=h product.product_name %></td>
+    <td><%=h product.description %></td>
+    <td><%=h product.stock %></td>
+    <td><%= link_to 'Show', product %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= will_paginate @products %>
